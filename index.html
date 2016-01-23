@@ -3,37 +3,74 @@
   <head>
     <title>Bio</title>
     <style>
-    body {
-      <"background-color:lightgrey">
-    }
+      title {
+        text-align: center;
+      }
+      h1 {
+        text-align: center;
+      }
+      h3 {
+        text-align: center;
+      }
+       .bio {
+         height: 300px;
+         width: 370px;
+      }
+      .bio-me {
+        height: 300px;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+      }
+      .bio-funct {
+        height: 350px;
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+      }
+      p {
+        font-size: 20px;
+        color: darkviolet;
+      }
     </style>
   </head>
   <body>
+    <h1>John Stoddard</h1>
     <h3>DevOps/Unix System Administrator</h3>
-     <img src="file:///Users/dmo/Downloads/jstoddar.jpg" alt="missing" >
+      <img class="bio-me" src="file:///Users/dmo/Downloads/jstoddar.jpg" alt="missing" >
     <h3>Grew up on a farm in Illinois</h3>
-     <img src="http://www.roadsideamerica.com/attract/images/mn/MNSANsod_amyc2_620x300.jpg" alt="missing farm pic" >
+     <img class="bio" src="http://www.roadsideamerica.com/attract/images/mn/MNSANsod_amyc2_620x300.jpg" alt="missing farm pic" >
 
    <h3>Raised Corn and Soybeans in Illnois</h3>
-     <img src="http://deltafarmpress.com/site-files/deltafarmpress.com/files/imagecache/medium_img/uploads/2013/08/img2120.jpg" alt="missing corn pic" >
+     <img class="bio" src="http://deltafarmpress.com/site-files/deltafarmpress.com/files/imagecache/medium_img/uploads/2013/08/img2120.jpg" alt="missing corn pic" >
+
    <h3>Went to school in Minnesota... <i>brrrr</i></h3>
-     <img src="http://www.thehillishome.com/wp-content/uploads/2014/02/snow11.jpg" alt="missing snow" > 
+     <img class="bio" src="http://www.thehillishome.com/wp-content/uploads/2014/02/snow11.jpg" alt="missing snow" > 
+
    <h3>Prior Coding: some System Adminy functional Python</h3>
-     <img src="https://i.imgur.com/Sex1E8m.jpg" alt="missing functiona" >
-   <ul>
-     <li>Moved to California in 1995</li>
-   </ul>
+     <img class="bio-funct" src="https://i.imgur.com/Sex1E8m.jpg" alt="missing functiona" >
+   <h1>Haiku</h1>
+     <p>Code keywords</p>
+     <p>Trees fall</p>
+     <p>Stormdrains overflow</p>
    <script>
-   var images = document.getElementsByTagName('img')
-   for (var i = 0 ; i < images.length ; i++){
-     if ( i === 0 ) {
-       images[i].style.height = '300px';
-       images[i].style.width = '300px';
-       } else {
-       images[i].style.height = '300px';
-       images[i].style.width = '350px';
-     }
-   }
+//   var images = document.getElementsByTagName('img')
+//   for (var i = 0 ; i < images.length ; i++){
+//     if ( i === 0 ) {
+//       images[i].style.height = '300px';
+//       images[i].style.width = '300px';
+//       } else {
+//       images[i].style.height = '300px';
+//       images[i].style.width = '350px';
+//     }
+//   }
+   var haiku = document.getElementsByTagName('p');
+//   for (var i = 0 ; i < haiku.length ; i++ ){
+//     console.log(haiku[i]);
+//   }
+   var body = document.body;
+   body.style.margin='0 auto';
+   body.style.width='350px';
    </script>
   </body>
 </html>
